@@ -280,6 +280,18 @@ function filterItems() {
     });
 }
 
+// function to reset search
+function resetSearch() {
+    const searchInput = document.getElementById('searchInput');
+    searchInput.value = '';  // Clear the search input
+
+    // Display all items again
+    jsonData.generators.forEach(generator => {
+        const listItem = document.getElementById(`div_${generator.id}`);
+        listItem.style.display = 'block';
+    });
+}
+
 function toggleNav(){
     // אחראי לסגור  את התפריט במובייל
     document.getElementById("main-nav").classList.toggle("hide-mobile");
