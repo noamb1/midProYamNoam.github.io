@@ -1,0 +1,318 @@
+﻿body {
+    direction: rtl;
+    overflow-x: hidden;
+}
+.grid{
+    padding: 3rem;
+   
+     margin-right:0.1%; 
+     margin-left:0.1%; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headerImg h1{
+    color:#8fc5ff;;
+    font-weight: bold;
+    margin: 0 auto;
+    
+}
+.mainP{
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+   margin-bottom: 1%;
+   font-weight: bold;
+font-size: 1rem;
+}
+
+.catP{ 
+    color: #a4d0ff;
+    margin: 0 auto;
+}
+
+.headerImg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/headerImg.jpg");
+    height: 40vh;
+    width: auto;
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+}
+
+.textHeader {
+     text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.buttonSubject {
+    border-radius: 10px; /* Adjust the border-radius for rounded corners */
+    background-color: #007bff; /* Set the background color to blue */
+    color: white; /* Set the text color to white for better visibility */
+    padding: 10px 15px; /* Add padding for better button appearance */
+    cursor: pointer; /* Add pointer cursor for better user experience */
+    border: none; /* Remove border for a cleaner look */
+    min-width:30vw;
+    margin-top:0.25rem;
+    margin-bottom:1rem;
+}
+
+
+
+.img-fluid {
+    width: auto; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px 10px 10px 10px;
+   
+    width: 50vw;  
+    /* margin-left: 2rem; */
+   
+}
+
+
+.subSubject {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* border-radius: 3%; */
+}
+
+
+.content {
+    flex-grow: 10;
+    max-height: 10%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+   max-width:60vw;/* Adjust the width as needed */
+    word-wrap: break-word; /* This property ensures that long words are broken and wrapped to the next line */
+   
+}
+
+.content p {
+  font-size: 1rem;
+
+}
+
+.content h1 {
+    font-size: 1.5rem;
+ }
+
+ .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: flex-start;
+ }
+
+ .darkblue {
+    background-color:rgb(72, 149, 155);;
+ }
+
+ .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#search {
+    text-align: center;
+    align-content: center;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#close-nav-button{
+    width: 3rem;
+    color: black;
+}
+.main-nav{
+    width: 8rem;
+    height: 15rem;
+}
+
+.flex-container-nav{
+    display: flex;
+    gap: 20px;
+    background-color:black;
+    padding: 15px;
+    flex-direction: column;
+    position: relative;
+}
+.flex-container-nav a{
+    color: white;
+    text-decoration:none;
+    font-family: assistant;
+    font-weight:bold ;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 2s ease-out;
+}
+.flex-container-nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.flex-container-nav a.active{
+    background-color: #4CAF50;
+            color: white;
+}
+
+.flex-container-nav.hide-mobile{
+    display: none;
+}
+
+.hide{
+    display: block;
+}
+
+nav button {
+    background-color: transparent;
+}
+nav button:hover {
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    outline: none; /* Remove the outline when the list item is clicked */
+}
+
+/* Alternatively, if there is a background highlight, you can remove it */
+li:active,
+li:focus {
+    background-color: transparent; /* Set the background color to transparent */
+}
+
+#nav-button img {
+    width: 15px;
+    height: auto;
+}
+
+#close-nav-button img{
+    width: 15px;
+}
+
+nav {
+    background-color: black;
+  
+}
+
+
+  
+ @media only screen and (min-width: 992px) {
+    .btn-group {
+         flex-basis: 100%;
+         justify-content: space-around;
+     }
+    
+     .flex-container-nav{
+        flex-direction: row;
+        position: relative;
+    }
+    .img-fluid {
+     width:30vw; 
+    
+    }
+   
+    .content{
+        max-width: 20vw;
+       
+    }
+
+    .flex-container-nav.hide-mobile{
+        display: flex;
+    
+    }
+    .col-sm-4{
+        min-width: 30vw;
+        width: fit-content;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       
+    }
+    .buttonSubject{
+        min-width: 10vw;
+    }
+    .hide{
+        display:none;
+}
+
+nav {
+    height: 8vh;
+  
+}
+
+.mainP{
+
+font-size: 1.4rem;
+}
+
+ }
+
+
+ @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 90%;
+      margin: 1.75rem auto;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .modal-dialog {
+      max-width: 80%;
+      margin: 1.75rem auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .modal-dialog {
+      max-width: 50%;
+      margin: 1.75rem auto;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .modal-dialog {
+      max-width: 40%;
+      margin: 1.75rem auto;
+  }
+  }
